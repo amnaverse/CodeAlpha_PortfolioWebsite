@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Frontend Developer Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
-<header>
-<h1>Hi, I'm Amna Ishaq</h1>
-<p>Frontend Developer</p>
+
+<header class="hero">
+  <h1 class="fade-in">Hi, I'm <span>Amna Ishaq</span></h1>
+  <p class="fade-in">Frontend Developer | HTML | CSS | JavaScript</p>
+  <button onclick="scrollToSection()">View My Work</button>
 </header>
-  
-<section id="about">
+
+<section id="about" class="card">
   <h2>About Me</h2>
   <p>
-    I am a passionate frontend developer who builds modern, responsive
-    and user-friendly websites using HTML, CSS, JavaScript and basic React.
+    I am a passionate frontend developer who builds modern, responsive,
+    and interactive websites using HTML, CSS, JavaScript and basic React.
   </p>
 </section>
 
-  <section id="skills">
+<section id="skills" class="card">
   <h2>Skills</h2>
   <div class="skills">
     <span>HTML</span>
@@ -31,24 +37,30 @@
   </div>
 </section>
 
-  <section id="projects">
+<section id="projects" class="card">
   <h2>Projects</h2>
-  <ul>
-    <li>Portfolio Website</li>
-    <li>To-Do App (JavaScript)</li>
-    <li>Simple Calculator</li>
-  </ul>
+
+  <div class="project">
+    <h3>Portfolio Website</h3>
+    <p>Responsive personal portfolio with animations.</p>
+  </div>
+
+  <div class="project">
+    <h3>To-Do App</h3>
+    <p>Task management app using JavaScript.</p>
+  </div>
 </section>
 
-  <section id="contact">
+<section id="contact" class="card">
   <h2>Contact</h2>
   <p>Email: amna16528@gmail.com</p>
 </section>
 
-  <footer>
-  <p>© 2026 Amna Ishaq | Frontend Developer</p>
+<footer>
+  <p>© 2026 Your Name | Built with ❤️</p>
 </footer>
-  
+
 <script src="script.js"></script>
 </body>
 </html>
+ 
