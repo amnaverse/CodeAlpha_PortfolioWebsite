@@ -258,6 +258,41 @@ footer{
   text-decoration:none;
 }
 
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:15px;
+}
+
+input, textarea{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+  background:#1e293b;
+  color:white;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+input:focus, textarea:focus{
+  border:1px solid #38bdf8;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
 /* RESPONSIVE */
 
 @media(max-width:768px){
